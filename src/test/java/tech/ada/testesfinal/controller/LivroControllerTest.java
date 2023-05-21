@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +19,6 @@ import tech.ada.testesfinal.exception.BadRequestException;
 import tech.ada.testesfinal.model.dto.LivroDTO;
 import tech.ada.testesfinal.model.dto.MensagemDTO;
 import tech.ada.testesfinal.model.entity.LivroEntity;
-import tech.ada.testesfinal.model.mapper.LivroMapper;
 import tech.ada.testesfinal.repository.LivroRepository;
 import tech.ada.testesfinal.service.LivroService;
 
@@ -87,7 +85,7 @@ public class LivroControllerTest {
                         .content(json)
                 )
                 .andDo(MockMvcResultHandlers.print())
-                .andExpect(MockMvcResultMatchers.status().isCreated());
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
     @Test

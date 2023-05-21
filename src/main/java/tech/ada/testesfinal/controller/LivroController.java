@@ -23,7 +23,7 @@ public class LivroController {
     public ResponseEntity<Object> criar(@RequestBody @Valid LivroDTO livroDTO){
 
         try {
-            return ResponseEntity.status(HttpStatus.CREATED)
+            return ResponseEntity.status(HttpStatus.OK)
                     .body(livroService.criar(livroDTO));
         } catch (BadRequestException e) {
             log.error(e.getMessage());
