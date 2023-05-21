@@ -1,4 +1,4 @@
-### SantanderCoders22-Testes Automatizado :red_circle:
+### SantanderCoders22-Testes Automatizados :red_circle:
 Exercício final do Módulo 8 (Testes Automatizados I) do curso de WebFullStack do programa Santander Coders, uma parceria entre AdaTech e Santander.  
 Criação de um sistema de registro de livros. 
 A aplicação precisa ter cobertura mínima de 80% do código da API e realizar pelo menos 2 testes de integração.
